@@ -17,12 +17,12 @@
 ```txt
 Felipe Lelis
 
-estudo engenharia de computação na unisagrado.
+Como um grande entusiasta de tecnologia,
 exploro inteligência artificial e sistemas complexos,
 com interesse em agentes, emergência e arquiteturas distribuídas.
-fora do código, minha curiosidade se estende à computação,
-cosmologia e astrofísica — diferentes maneiras de investigar
-como sistemas complexos dão origem à ordem.
+
+fora do código, volto a mesma curiosidade para cosmologia
+e astrofísica: como sistemas complexos dão origem à ordem.
 ```
 
 <div align="center"><img src="https://github.com/user-attachments/assets/f3d0b9e6-7173-4949-b676-93738de96647" height="24" alt="匠 building"/></div>
@@ -50,21 +50,21 @@ software engineering.
 
 <br>
 
-**[rag-local-ollama-chroma](https://github.com/lellisz/rag-local-ollama-chroma)**
-RAG local sem framework — retrieval híbrido combinando **BM25** e busca vetorial por cosine similarity, fundidos por weighted score fusion, 100% on-device. Chunking configurável (fixed-size + overlap, testado contra chunking semântico), embeddings gerados via **Ollama** e indexados em **ChromaDB** (HNSW, tunado em ef_construction/M), com reranking opcional por cross-encoder. Cada estágio — chunking, embedding, retrieval, fusion, reranking — implementado e instrumentado manualmente (latência e recall@k logados por etapa), sem LangChain/LlamaIndex de por meio. Projeto de validação para a certificação **AWS AIF-C01**, construído para expor o que cada camada de um RAG stack realmente contribui pro resultado final.
-`Python` `Ollama` `ChromaDB` `HNSW` `BM25` `Reranking` `RAG`
+**incident-copilot** <sub>· em desenvolvimento</sub>
+Agente de resposta a incidentes construído em **LangGraph**. Busca informações em runbooks, verifica cada ação antes de propor, e alterna entre modelos locais e na nuvem conforme o custo e a criticidade da tarefa.
+`Python` `LangGraph` `AWS Bedrock`
 
 <br>
 
 **[lora-portfolio-report](https://github.com/lellisz/lora-portfolio-report)**
-Fine-tuning com **LoRA** (rank baixo, alpha proporcional, adapters aplicados às projeções q/v da camada de attention) sobre modelo base quantizado em 4-bit, otimizado para custo de treino em GPU única. Avaliação multi-agente do resultado — um agente audita fidelidade ao prompt, outro coerência textual, outro alucinação factual, cada um via LLM-as-judge com rubrica própria — scores agregados e comparados par a par (pairwise) contra o modelo base, no lugar de métricas isoladas como BLEU/ROUGE, que penalizam variação lexical válida.
-`Python` `LoRA` `PEFT` `Quantization` `LLM-as-Judge`
+Fine-tuning de um modelo de linguagem com **LoRA**, avaliado por múltiplos agentes de IA — cada um julgando uma dimensão diferente do resultado: fidelidade, coerência e alucinação.
+`Python` `LoRA` `LLM-as-Judge`
 
 <br>
 
-**incident-copilot** <sub>· em desenvolvimento</sub>
-Agente de resposta a incidentes modelado como state graph em **LangGraph** — cada nó representa uma etapa do playbook (triagem, diagnóstico, proposta de ação, aprovação), com checkpointing em **Postgres + pgvector** garantindo retomada exata do estado após falha ou timeout. Retrieval híbrido (vetor + full-text) sobre a base de runbooks, fundido via Reciprocal Rank Fusion, e reranking por LLM-as-judge antes de qualquer ação ser proposta — nenhuma ação chega ao operador sem essa camada de verificação. Modelos locais (Ollama) e cloud (Gemini, Bedrock Claude) coexistem por nó do grafo, cada um escolhido pelo trade-off custo/latência/qualidade daquela etapa específica — não por padrão fixo — com fallback automático para o modelo cloud quando a confiança do modelo local cai abaixo do threshold.
-`Python` `LangGraph` `Postgres/pgvector` `RRF` `AWS Bedrock` `Human-in-the-Loop`
+**[rag-local-ollama-chroma](https://github.com/lellisz/rag-local-ollama-chroma)**
+RAG local sem framework — busca híbrida (texto + vetorial) rodando 100% on-device com **Ollama** e **ChromaDB**.
+`Python` `Ollama` `ChromaDB` `RAG`
 
 <br>
 
