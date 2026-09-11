@@ -8,11 +8,13 @@
 
 ### <img src="https://github.com/user-attachments/assets/3de1e6c0-e3f9-4e10-9a6b-6cc1edff8cc5" height="26" alt="技術"/> &nbsp;·&nbsp; <img src="https://readme-typing-svg.demolab.com/?font=IBM+Plex+Mono&size=20&duration=2600&pause=1200&color=D64545&center=true&vCenter=true&width=180&height=30&lines=AI+Engineer" alt="AI Engineer"/>
 
+<sub><code>foco atual → agentes autônomos · sistemas distribuídos · Claude API</code></sub>
+
 </div>
 
 <br>
 
-<div align="center"><img src="https://github.com/user-attachments/assets/76692d9e-5767-4eb9-952d-2a4a573ee4d5" height="24" alt="匠 whoami"/></div>
+<div align="center"><img src="assets/kanji-whoami.png" height="24" alt="己 whoami"/></div>
 
 ```txt
 Felipe Lelis
@@ -36,7 +38,7 @@ software engineering.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/-Python-0D1117?style=flat-square&logo=python&logoColor=D64545" alt="Python"/> <img src="https://img.shields.io/badge/-TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=D64545" alt="TypeScript"/> <img src="https://img.shields.io/badge/-C-0D1117?style=flat-square&logoColor=D64545" alt="C"/>
+<img src="https://img.shields.io/badge/-Python-0D1117?style=flat-square&logo=python&logoColor=D64545" alt="Python"/> <img src="https://img.shields.io/badge/-TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=D64545" alt="TypeScript"/>
 &nbsp;·&nbsp;
 <img src="https://img.shields.io/badge/-LangGraph-0D1117?style=flat-square&logoColor=D64545" alt="LangGraph"/> <img src="https://img.shields.io/badge/-LangChain-0D1117?style=flat-square&logo=langchain&logoColor=D64545" alt="LangChain"/>
 &nbsp;·&nbsp;
@@ -46,11 +48,11 @@ software engineering.
 
 <br>
 
-## <img src="https://github.com/user-attachments/assets/c6878a10-7db6-4c30-aebe-bf8546a5d8fe" height="20" alt="侍"/> projetos selecionados
+## <img src="assets/kanji-projetos.png" height="20" alt="選"/> projetos selecionados
 
 <br>
 
-**incident-copilot** <sub>· em desenvolvimento</sub>
+**[incident-copilot](https://github.com/lellisz/incident-copilot)** <sub>· em desenvolvimento</sub>
 Agente de resposta a incidentes construído em **LangGraph**. Busca informações em runbooks, verifica cada ação antes de propor, e alterna entre modelos locais e na nuvem conforme o custo e a criticidade da tarefa.
 `Python` `LangGraph` `AWS Bedrock`
 
@@ -68,7 +70,7 @@ RAG local sem framework — busca híbrida (texto + vetorial) rodando 100% on-de
 
 <br>
 
-## <img src="https://github.com/user-attachments/assets/e58413f3-feec-4d83-8bce-a09a0ef2d917" height="20" alt="学"/> princípios
+## <img src="assets/kanji-principios.png" height="20" alt="理"/> princípios
 
 > "Entities should not be multiplied beyond necessity."
 > — William of Ockham
