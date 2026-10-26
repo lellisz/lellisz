@@ -1,6 +1,4 @@
-# Felipe Lelis
-
-*Engenharia da Computação · Backend e IA aplicada*
+<img src="assets/header.svg" alt="Felipe Lelis, Engenharia da Computação, Backend e IA aplicada. 173 testes automatizados, 12 incidentes golden em 3 suítes, 9 decisões em ADRs, US$ 0,85 por mês em repouso na AWS." width="100%">
 
 3º ano na UNISAGRADO · Bauru, SP · aberto a remoto · buscando estágio ou júnior
 
@@ -12,11 +10,7 @@ Construo sistemas de IA que se podem testar: agentes que pedem aprovação antes
 
 ### [incident-copilot](https://github.com/lellisz/incident-copilot)
 
-Agente em LangGraph para resposta a incidentes. Recebe um alerta, recupera runbooks com RAG híbrido, investiga com ferramentas somente leitura, propõe um plano de remediação com rollback em cada passo e para para aprovação humana antes de executar qualquer coisa.
-
-| 173 | 12 | 9 | US$ 0,85 |
-| :-: | :-: | :-: | :-: |
-| testes automatizados | incidentes golden em 3 suítes | decisões documentadas em ADRs | por mês em repouso na AWS |
+Agente em LangGraph para resposta a incidentes. Recebe um alerta, recupera runbooks com RAG híbrido, investiga com ferramentas somente leitura, propõe um plano de remediação com rollback em cada passo e para para aprovação humana antes de executar qualquer coisa. Os números do topo da página são deste projeto.
 
 ```text
 triage → retrieve → hypothesize → investigate → propose_remediation → human_approval → execute → postmortem
